@@ -8,4 +8,4 @@ function environment_variable_error() {
 [[ -z ${AWS_ACCESS_KEY} ]] && environment_variable_error
 [[ -z ${AWS_SECRET_KEY} ]] && environment_variable_error
 
-docker run -e AWS_ACCESS_KEY=$AWS_ACCESS_KEY -e AWS_SECRET_KEY=$AWS_SECRET_KEY oicr-softeng/cost_reporter bash report_runner.sh
+docker run -e AWS_ACCESS_KEY=$AWS_ACCESS_KEY -e AWS_SECRET_KEY=$AWS_SECRET_KEY oicrsofteng/aws-reporting bash report_runner.sh
