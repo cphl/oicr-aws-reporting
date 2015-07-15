@@ -6,5 +6,5 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone https://github.com/cphl/oicr-aws-reporting.git
 RUN pip install boto
-WORKDIR oicr-sandbox/
+WORKDIR oicr-aws-reporting/
 RUN mkdir reports
